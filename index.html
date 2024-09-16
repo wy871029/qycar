@@ -92,14 +92,37 @@
             text-align: center;
             margin: 20px 0;
         }
+
         .external-links {
             display: flex;
             justify-content: space-around;
             margin: 20px 0;
         }
         .external-links img {
-            width: 50px;
-            height: 50px;
+            width: 120px;
+            height: 120px;
+        }
+        .image-nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .image-nav-item {
+            width: 22%; /* 调整宽度以适应4个项目 */
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+        }
+        .image-nav-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .image-nav-item span {
+            display: block;
+            margin-top: 10px;
+            font-size: 18px;
         }
         #cat-container {
             position: fixed;
@@ -107,9 +130,9 @@
             transition: all 0.5s ease;
         }
         #cat {
-            width: 100px;
-            height: 100px;
-            background-image: url('file:///C:/Users/Administrator/Desktop/cha.png');
+            width: 150px;
+            height: 250px;
+            background-image: url('https://github.com/wy871029/qycar/blob/7c260197fc4dc143a3890654db54b44dd5efe461/website-assets/images/catgirl.png');
             background-size: cover;
             cursor: pointer;
         }
@@ -144,8 +167,8 @@
     <header>
         <img src="file:///C:/Users/Administrator/Desktop/qunyunlogo.png" alt="Logo" class="logo">
         <nav>
-            <a href="#">车型</a>
-            <a href="#">品牌</a>
+            <a href="#">购车流程</a>
+            <a href="#">品牌故事</a>
             <a href="#">价格</a>
         </nav>
         <div class="contact">联系电话: 139-7732-1510</div>
@@ -158,27 +181,50 @@
                 <div class="slider-label">购车顾问温耀</div>
             </div>
             <div class="slider-item">
-                <img src="file:///C:/Users/Administrator/Desktop/17516418ae0e44ca8efbb6c6482bbbf5.jpeg" alt="主图2">
-                <div class="slider-label">限时优惠活动</div>
+                <img src="file:///C:/Users/Administrator/Desktop/%E4%B8%BB%E5%9B%BE2.png" alt="主图2">
+                <div class="slider-label">购车顾问赵微</div>
 
             </div>
         </div>
     </div>
     <div class="content-wrapper">
-        <div class="section-title">精彩视频推荐</div>
+        <div class="section-title">资源商买车的好处</div>
 
     <div class="video-container">
         <iframe src="https://player.bilibili.com/player.html?aid=170001" width="1600" height="900" frameborder="0" allowfullscreen></iframe>
     </div>
+        <div class="section-title">车型选择</div>
+        <div class="image-nav">
+            <a href="#" class="image-nav-item">
+                <img src="file:///C:/Users/Administrator/Desktop/suv.png" alt="suv">
+                <span>SUV，适宜家庭，户外爱好者</span>
+            </a>
+            <a href="#" class="image-nav-item">
+                <img src="file:///C:/Users/Administrator/Desktop/%E8%BD%BF%E8%BD%A6.png" alt="轿车">
+                <span>轿车，操控性好，适宜小家庭</span>
+            </a>
+            <a href="#" class="image-nav-item">
+                <img src="file:///C:/Users/Administrator/Desktop/mpv.png" alt="MPV">
+                <span>MPV，适宜大家庭，商务人士</span>
+            </a>
+            <a href="#" class="image-nav-item">
+                <img src="file:///C:/Users/Administrator/Desktop/%E8%B7%91%E8%BD%A6.png" alt="跑车">
+                <span>跑车，动感，操控好，适宜驾驶爱好者</span>
+            </a>
+            <a href="#" class="image-nav-item">
+                <img src="file:///C:/Users/Administrator/Desktop/%E7%9A%AE%E5%8D%A1.png" alt="皮卡">
+                <span>皮卡，载物好，适宜工作需要用户</span>
+            </a>
+        </div>
 
-<div class="section-title"> 合作伙伴链接</div>
+<div class="section-title"> 各平台链接</div>
 
     <div class="external-links">
-        <a href="#"><img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/bilibili.png" alt="外部链接1"></a>
-        <a href="#"><img src="file:///C:/Users/Administrator/Desktop/logo.png" alt="外部链接2"></a>
-        <a href="#"><img src="file:///C:/Users/Administrator/Desktop/logo.png" alt="外部链接3"></a>
-        <a href="#"><img src="/api/placeholder/50/50" alt="外部链接4"></a>
-        <a href="#"><img src="/api/placeholder/50/50" alt="外部链接5"></a>
+        <a href="#"><img src="file:///C:/Users/Administrator/Desktop/douyin.png" alt="外部链接1"></a>
+        <a href="#"><img src="file:///C:/Users/Administrator/Desktop/kuaishou.png" alt="外部链接2"></a>
+        <a href="#"><img src="file:///C:/Users/Administrator/Desktop/xiaohongshu.png" alt="外部链接3"></a>
+        <a href="#"><img src="file:///C:/Users/Administrator/Desktop/weibo.png" alt="外部链接4"></a>
+        <a href="#"><img src="file:///C:/Users/Administrator/Desktop/bilibili.png" alt="外部链接5"></a>
     </div>
 
     <div id="cat-container">
@@ -233,7 +279,7 @@
             catSpeech.style.display = 'block';
             setTimeout(() => {
                 catSpeech.style.display = 'none';
-            }, 3000);
+            }, '9000');
         }
 
         cat.addEventListener('click', () => {
