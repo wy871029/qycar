@@ -14,9 +14,22 @@
         header {
             background-color: black;
             color: white;
-            padding: 20px;
-            text-align: center;
+            padding: 0  20px; /* 移除内边距 */
+            height: 80px; /* 设置固定高度 */
+            display: flex; /* 使用 flexbox 布局 */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
         }
+        .logo  {
+            height: 30px;
+            width: 100px;
+        }
+       .title {
+           font-size: 24px;
+           font-weight: bold;
+           text-align: center;
+           flex-grow: 1;
+       }
         .car-models {
             display: flex;
             flex-wrap: wrap;
@@ -24,7 +37,7 @@
             padding: 20px;
         }
         .car-model {
-            width: 300px;
+            width: 480px;
             margin: 20px;
             background-color: white;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -33,7 +46,7 @@
         }
         .car-model img {
             width: 100%;
-            height: 200px;
+            height:480px;
             object-fit: cover;
         }
         .car-title {
@@ -51,48 +64,52 @@
 </head>
 <body>
     <header>
-        <h1>车型展示</h1>
+        <a href="#home">
+            <img src="file:///C:/Users/Administrator/Desktop/logo%E5%89%AF.png" alt="Logo"class="logo"></div>
+        </a>
+        <div class="title">购车流程</div>
+        <div style="width: 120px;"></div> <!-- 用于平衡布局的空div -->
     </header>
     <div class="car-models">
         <div class="car-model">
-            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/suv.jpg" alt="SUV">
-            <div class="car-title">豪华SUV</div>
-            <div class="car-description">宽敞舒适的内部空间，强劲动力，适合家庭出游和城市驾驶。</div>
+            <img src="file:///C:/Users/Administrator/Desktop/%E9%80%89%E8%BD%A6.png" alt="第一步">
+            <div class="car-title">理性购车，选对才舒心</div>
+            <div class="car-description">根据自身预算，用车需求，选定品牌、车型、配置</div>
         </div>
         <div class="car-model">
-            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/sedan.jpg" alt="轿车">
-            <div class="car-title">商务轿车</div>
-            <div class="car-description">优雅设计，出色性能，是商务人士的理想选择。</div>
+            <img src="file:///C:/Users/Administrator/Desktop/%E8%AF%95%E9%A9%BE.png" alt="第二步">
+            <div class="car-title">驾驶乐趣，试驾发现</div>
+            <div class="car-description">通过实际驾驶，才能深入了解车辆的性能、操控性、舒适性等方面的表现，从而做出最适合自己的选择。</div>
         </div>
         <div class="car-model">
-            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/sports-car.jpg" alt="跑车">
-            <div class="car-title">高性能跑车</div>
-            <div class="car-description">极致速度体验，卓越操控，为追求激情的驾驶者而生。</div>
+            <img src="file:///C:/Users/Administrator/Desktop/%E4%BB%B7%E6%A0%BC.png" alt="第三步">
+            <div class="car-title">联系我们</div>
+            <div class="car-description">为您省时省力，轻松购车。</div>
         </div>
         <div class="car-model">
-            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/electric-car.jpg" alt="电动车">
-            <div class="car-title">新能源电动车</div>
-            <div class="car-description">环保节能，零排放，代表未来出行方式。</div>
+            <img src="file:///C:/Users/Administrator/Desktop/4%E4%B9%B0%E8%BD%A6.png" alt="第四步">
+            <div class="car-title">提车so easy！</div>
+            <div class="car-description">从订车到提车，费用清晰，省去繁琐流程，轻松拥有爱车。</div>
         </div>
         <div class="car-model">
-            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/mpv.jpg" alt="MPV">
-            <div class="car-title">多功能MPV</div>
-            <div class="car-description">灵活空间配置，满足多样化需求，是家庭和商务的理想之选。</div>
+            <img src="file:///C:/Users/Administrator/Desktop/5%E4%BF%9D%E9%99%A9.png" alt="第五步">
+            <div class="car-title">车险返点，多重惊喜</div>
+            <div class="car-description">我们不仅能帮您找到最适合您的车险方案，还能为您争取到更多的返点，让您购险更划算。</div>
         </div>
         <div class="car-model">
-            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/pickup.jpg" alt="皮卡">
-            <div class="car-title">全能皮卡</div>
-            <div class="car-description">强悍动力，出色载重能力，工作娱乐两相宜。</div>
+            <img src="file:///C:/Users/Administrator/Desktop/6%E7%BC%B4%E7%A8%8E.png" alt="第六步">
+            <div class="car-title">缴纳购置税</div>
+            <div class="car-description">购置税根据车型和车价会有减免税额度，缴纳完才能办理正式牌。</div>
         </div>
         <div class="car-model">
-            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/luxury-car.jpg" alt="豪华车">
-            <div class="car-title">顶级豪华车</div>
-            <div class="car-description">尊贵不凡，极致奢华，彰显非凡品位。</div>
+            <img src="file:///C:/Users/Administrator/Desktop/7%E4%B8%8A%E7%89%8C.png" alt="第七步">
+            <div class="car-title">办理车牌</div>
+            <div class="car-description">自己办理需排队，代办服务也到位。</div>
         </div>
         <div class="car-model">
-            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/compact-car.jpg" alt="紧凑型车">
-            <div class="car-title">经济紧凑型</div>
-            <div class="car-description">小巧灵活，省油环保，城市通勤的理想选择。</div>
+            <img src="file:///C:/Users/Administrator/Desktop/8%E6%B6%88%E8%B4%B9%E5%93%81.png" alt="第八步">
+            <div class="car-title">汽车，大件消费品，理性看待</div>
+            <div class="car-description">早买早享受，晚买更实惠</div>
         </div>
     </div>
 </body>
