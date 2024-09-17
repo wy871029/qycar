@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>车型展示</title>
+    <style>
+        body {
+            font-family: '京华老宋体', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .car-models {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .car-model {
+            width: 300px;
+            margin: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .car-model img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .car-title {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .car-description {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>车型展示</h1>
+    </header>
+    <div class="car-models">
+        <div class="car-model">
+            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/suv.jpg" alt="SUV">
+            <div class="car-title">豪华SUV</div>
+            <div class="car-description">宽敞舒适的内部空间，强劲动力，适合家庭出游和城市驾驶。</div>
+        </div>
+        <div class="car-model">
+            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/sedan.jpg" alt="轿车">
+            <div class="car-title">商务轿车</div>
+            <div class="car-description">优雅设计，出色性能，是商务人士的理想选择。</div>
+        </div>
+        <div class="car-model">
+            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/sports-car.jpg" alt="跑车">
+            <div class="car-title">高性能跑车</div>
+            <div class="car-description">极致速度体验，卓越操控，为追求激情的驾驶者而生。</div>
+        </div>
+        <div class="car-model">
+            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/electric-car.jpg" alt="电动车">
+            <div class="car-title">新能源电动车</div>
+            <div class="car-description">环保节能，零排放，代表未来出行方式。</div>
+        </div>
+        <div class="car-model">
+            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/mpv.jpg" alt="MPV">
+            <div class="car-title">多功能MPV</div>
+            <div class="car-description">灵活空间配置，满足多样化需求，是家庭和商务的理想之选。</div>
+        </div>
+        <div class="car-model">
+            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/pickup.jpg" alt="皮卡">
+            <div class="car-title">全能皮卡</div>
+            <div class="car-description">强悍动力，出色载重能力，工作娱乐两相宜。</div>
+        </div>
+        <div class="car-model">
+            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/luxury-car.jpg" alt="豪华车">
+            <div class="car-title">顶级豪华车</div>
+            <div class="car-description">尊贵不凡，极致奢华，彰显非凡品位。</div>
+        </div>
+        <div class="car-model">
+            <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/assets/images/compact-car.jpg" alt="紧凑型车">
+            <div class="car-title">经济紧凑型</div>
+            <div class="car-description">小巧灵活，省油环保，城市通勤的理想选择。</div>
+        </div>
+    </div>
+</body>
+</html>
