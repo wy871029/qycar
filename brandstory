@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>品牌故事</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 0  20px; /* 移除内边距 */
+            height: 80px; /* 设置固定高度 */
+            display: flex; /* 使用 flexbox 布局 */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+        }
+        .logo  {
+            height: 30px;
+            width: 100px;
+        }
+       .title {
+           font-size: 24px;
+           font-weight: bold;
+           text-align: center;
+           flex-grow: 1;
+       }
+        .nav-image {
+            width: 100px;
+            height: 50px;
+            background-color: #ddd;
+        }
+        h1 {
+            text-align: center;
+            flex-grow: 1;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .item {
+            width: 100%;
+            max-width: 1980px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .left-image {
+            width: 30%;
+            height: 550px;
+            background-color: #eee;
+            margin-right: 3%;
+        }
+        .right-image {
+            width: 60%;
+            height: 550px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#home">
+            <img src="file:///C:/Users/Administrator/Desktop/logo%E5%89%AF.png" alt="Logo"class="logo"></div>
+        </a>
+        <div class="title">品牌故事</div>
+        <div style="width: 120px;"></div> <!-- 用于平衡布局的空div -->
+    </header>
+    <div class="content">
+        <!-- 重复16次 -->
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <div class="item">
+            <div class="left-image"></div>
+            <div class="right-image"></div>
+        </div>
+        <!-- ... 重复14次 ... -->
+    </div>
+</body>
+</html>
