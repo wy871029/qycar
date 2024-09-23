@@ -124,6 +124,49 @@
             margin-top: 10px;
             font-size: 18px;
         }
+        .social-media-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1760px;
+            margin: 0 auto;
+        }
+        .logo-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+        .logo-container:hover img {
+            transform: scale(1.1);
+        }
+        .qr-popup {
+            display: none;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            z-index: 10;
+            white-space: nowrap;  /* 防止二维码换行 */
+        }
+        .qr-popup img {
+            width: 120px;
+            height: 120px;
+            margin: 0 5px;
+            display: inline-block;  /* 确保图片水平排列 */
+        }
                 footer {
             background-color: #000;
             color: #fff;
@@ -245,19 +288,64 @@
             </a>
         </div>
 
-<div class="section-title"> 各平台链接</div>
-
-    <div class="external-links">
-        <a href="#"><img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/douyin.png" alt="外部链接1"></a>
-        <a href="#"><img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/kuaishou.png" alt="外部链接2"></a>
-        <a href="#"><img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/xiaohongshu.png" alt="外部链接3"></a>
-        <a href="#"><img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/weibo.png" alt="外部链接4"></a>
-        <a href="#"><img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/weixin.png" alt="外部链接5"></a>
-        <a href="#"><img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/bilibili.png" alt="外部链接6"></a>
-        <a href="#"><img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/zhihu.png" alt="外部链接7"></a>
-        <a href="#"><img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/acfun.png" alt="外部链接8"></a>
-        <a href="#"><img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/baijia.png" alt="外部链接9"></a>
+    <div class="social-media-container">
+        <!-- 社交媒体logo示例，请替换为实际的logo图片 -->
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/bilibili.png" alt="B站">
+            <div class="qr-popup">
+                <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/bili二.png" alt="bilibili QR Code">
+            </div>
+        </div>
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/kuaishou.png" alt="快手">
+            <div class="qr-popup">
+                <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/kuaishou二.png" alt="kuaishou QR Code">
+            </div>
+        </div>
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/xiaohongshu.png" alt="小红书">
+            <div class="qr-popup">
+                <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/xiaohongshu二.png" alt="小红书 QR Code">
+            </div>
+        </div>
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/weibo.png" alt="微博">
+            <div class="qr-popup">
+                <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/weibo二.png" alt="weibo QR Code">
+            </div>
+        </div>
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/weixin.png" alt="微信">
+            <div class="qr-popup">
+                <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/weixin二.png" alt="WeChat QR Code">
+            </div>
+        </div>
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/douyin.png" alt="抖音">
+            <div class="qr-popup">
+                <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/douyin二.png" alt="douyin QR Code">
+            </div>
+        </div>
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/zhihu.png" alt="知乎">
+            <div class="qr-popup">
+                <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/zhihu二.png" alt="知乎 QR Code">
+            </div>
+        </div>
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/acfun.png" alt="acfun">
+            <div class="qr-popup">
+                <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/acfun二.png" alt="ACfun QR Code">
+            </div>
+        </div>
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/baijia.png" alt="百家">
+            <div class="qr-popup">
+                <img src="https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/baijia二.png" alt="百家 QR Code">
+            </div>
+        </div>
     </div>
+
             <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -282,6 +370,16 @@
         <div id="cat"></div>
         <div id="cat-speech"></div>
     </div>
+    <script>
+        document.querySelectorAll('.logo-container').forEach(container => {
+            container.addEventListener('mouseenter', () => {
+                container.querySelector('.qr-popup').style.display = 'block';
+            });
+            container.addEventListener('mouseleave', () => {
+                container.querySelector('.qr-popup').style.display = 'none';
+            });
+        });
+    </script>
 
     <script>
         // 轮播图效果
