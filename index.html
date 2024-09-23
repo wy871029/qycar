@@ -195,37 +195,7 @@
         .footer-section p {
             margin: 5px 0;
         }
-        #cat-container {
-            position: fixed;
-            z-index: 1000;
-            transition: all 0.5s ease;
-        }
-        #cat {
-            width: 150px;
-            height: 250px;
-            background-image: url('https://raw.githubusercontent.com/wy871029/qycar/main/website-assets/images/catgirl.png');
-            background-size: cover;
-            cursor: pointer;
-        }
-        #cat-speech {
-            position: absolute;
-            background-color: white;
-            border: 2px solid black;
-            border-radius: 10px;
-            padding: 10px;
-            max-width: 200px;
-            top: -80px;
-            left: 50px;
-            display: none;
-        }
-        #cat-speech:after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 20px;
-            border-width: 10px 10px 0;
-            border-style: solid;
-            border-color: white transparent;
+
         .content-wrapper {
             max-width: 1600px; /* 设置最大宽度 */
             margin: 0 auto; /* 让内容居中 */
@@ -287,6 +257,8 @@
                 <span>皮卡：载物好，适宜工作需要用户</span>
             </a>
         </div>
+    <div class="content-wrapper">
+        <div class="section-title">社交媒体账号</div>
 
     <div class="social-media-container">
         <!-- 社交媒体logo示例，请替换为实际的logo图片 -->
@@ -381,64 +353,6 @@
         });
     </script>
 
-    <script>
-        // 轮播图效果
-        const sliderItems = document.querySelectorAll('.slider-item');
-        let currentIndex = 0;
 
-        function nextSlide() {
-            sliderItems[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + 1) % sliderItems.length;
-            sliderItems[currentIndex].classList.add('active');
-        }
-
-        setInterval(nextSlide, 5000); // 每5秒切换一次图片
-
-        // 互动小猫（保持不变）
-        const catContainer = document.getElementById('cat-container');
-        const cat = document.getElementById('cat');
-        const catSpeech = document.getElementById('cat-speech');
-
-        const catPhrases = [
-            "喵~ 欢迎来到我们的网站！",
-            "想看看我们最新的车型吗？",
-            "别忘了查看我们的优惠活动哦！",
-            "需要帮助吗？随时联系我们！",
-            "喵喵喵~ 今天天气真好，适合试驾呢！"
-        ];
-
-        function getRandomPosition() {
-            const maxX = window.innerWidth - 100;
-            const maxY = window.innerHeight - 100;
-            return {
-                x: Math.random() * maxX,
-                y: Math.random() * maxY
-            };
-        }
-
-        function moveCat() {
-            const { x, y } = getRandomPosition();
-            catContainer.style.left = `${x}px`;
-            catContainer.style.top = `${y}px`;
-        }
-
-        function showCatSpeech() {
-            const phrase = catPhrases[Math.floor(Math.random() * catPhrases.length)];
-            catSpeech.textContent = phrase;
-            catSpeech.style.display = 'block';
-            setTimeout(() => {
-                catSpeech.style.display = 'none';
-            }, '9000');
-        }
-
-        cat.addEventListener('click', () => {
-            moveCat();
-            showCatSpeech();
-        });
-
-        // 初始化小猫位置
-        moveCat();
-        showCatSpeech();
-    </script>
 </body>
 </html>
