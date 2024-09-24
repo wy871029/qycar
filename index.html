@@ -342,6 +342,22 @@
         <div id="cat-speech"></div>
     </div>
     <script>
+        function startSlider() {
+            const items = document.querySelectorAll('.slider-item');
+            let currentItem = 0;
+
+            function showNextItem() {
+                items[currentItem].classList.remove('active');
+                currentItem = (currentItem + 1) % items.length;
+                items[currentItem].classList.add('active');
+            }
+
+            setInterval(showNextItem, 5000); // 每5秒切换一次图片
+        }
+
+        document.addEventListener('DOMContentLoaded', startSlider);
+    </script>
+    <script>
         document.querySelectorAll('.logo-container').forEach(container => {
             container.addEventListener('mouseenter', () => {
                 container.querySelector('.qr-popup').style.display = 'block';
